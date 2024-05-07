@@ -1,0 +1,13 @@
+body {
+    color: white;
+
+}
+
+.main_container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 25px;
+    background-color: black;
+}
