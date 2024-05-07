@@ -1,7 +1,6 @@
 import axios from "axios";
 
 const BASE_URL="https://api.themoviedb.org/3";
-const API_KEY_PARAM = "api_key=084be13d1c230b3196feefc38ba745b7";
 export const BACKDROP_URL = "https://image.tmdb.org/t/p/";
 export class TvShowApi{
 
