@@ -7,7 +7,7 @@ export class TvShowApi{
 
     static async fetchPopularTvShow(){
         try{
-            const response = await axios.get(`${BASE_URL}/tv/popular?${API_KEY_PARAM}`)
+            const response = await axios.get(`${BASE_URL}/tv/popular?api_key=${process.env.REACT_APP_API_KEY_PARAM}`)
             return response.data.results;
         }
         catch (e) {
@@ -17,7 +17,7 @@ export class TvShowApi{
 
     static async fetchRecommendedTvShow(serieId){
         try{
-            const response = await axios.get(`${BASE_URL}/tv/${serieId}/recommendations?${API_KEY_PARAM}`)
+            const response = await axios.get(`${BASE_URL}/tv/${serieId}/recommendations?api_key=${process.env.REACT_APP_API_KEY_PARAM}`)
             return response.data.results;
         }
         catch (e) {
@@ -28,7 +28,7 @@ export class TvShowApi{
 
     static async fetchTvShowFromName(name){
         try{
-            const response = await axios.get(`${BASE_URL}/search/tv?query=${name}&${API_KEY_PARAM}`)
+            const response = await axios.get(`${BASE_URL}/search/tv?query=${name}&api_key=${process.env.REACT_APP_API_KEY_PARAM}`)
             return response.data.results;
         }
         catch (e) {
