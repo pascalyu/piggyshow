@@ -5,7 +5,7 @@ import Bottom from "./Bottom/Bottom";
 import Content from "./Content/Content";
 import "./global.css";
 import {BACKDROP_URL, TvShowApi} from "./Api/TvShowApi";
-
+//
 function App() {
     const [currentTvShow, setCurrentTvShow] = useState();
     const [recommendedTvShow, setRecommendedTvShow] = useState();
